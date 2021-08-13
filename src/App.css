@@ -1,24 +1,38 @@
-body, html {
-  height: 100%;
-  text-align: center;
-  background-image: url('./images/gray_sand.png');
-  background-repeat: repeat;
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* SCROLLING BACKGROUND */
+
+body {
+  background-image: url('./images/dark_brick_wall.png');
+  background-position: bottom;
+  animation: 4s linear 0s infinite bp;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.backgroundColor {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
+@keyframes bp {
   from {
-    margin-left: 100%;
-    width: 300%;
+    background-position:  198px 0;
   }
-
+  
   to {
-    margin-left: 0%;
-    width: 100%;
+    background-position:  0 198px;
   }
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Anonymous Pro', monospace;  
+}
+
+.text {
+  font: 900 18px Ruda;
+  color: #C08;
+  background: white;
+  display: inline-block;
+  padding: 1rem;
+}
+
