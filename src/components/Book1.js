@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel'g
+import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import cover from '../images/cover1.png'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
 
 function Book1() {
 
@@ -12,16 +17,22 @@ function Book1() {
 
     return (
         <div>
+        <Container>
+        <Row>
+        <Col>
+        <img src={cover} />
+        </Col>
+        <Col>
         <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
-            <img
+            {/* <img
             className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
+            src={cover}
             alt="First slide"
-            />
+            /> */}
                 <Carousel.Caption>
                     <h3 class='text'>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <p>number 1</p>
                 </Carousel.Caption>
             </Carousel.Item>
 
@@ -39,7 +50,10 @@ function Book1() {
                 </Carousel.Caption>
             </Carousel.Item>
 
-</Carousel>
+            </Carousel>
+            </Col>
+            </Row>
+</Container>
 
 </div>
 
