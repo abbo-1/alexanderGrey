@@ -8,10 +8,8 @@ body {
   background-position: bottom;
   animation: 4s linear 0s infinite bp;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
+/* 
 @keyframes bp {
   from {
     background-position:  198px 0;
@@ -20,12 +18,16 @@ body {
   to {
     background-position:  0 198px;
   }
-}
+} */
 
 html, body {
   height: 100%;
   margin: 0;
   font-family: 'Anonymous Pro', monospace;  
+}
+
+#title {
+  font-size: x-large;
 }
 
 .text {
@@ -34,5 +36,9 @@ html, body {
   background: white;
   display: inline-block;
   padding: 1rem;
+}
+
+.margin {
+  margin: 55px;
 }
 
