@@ -34,7 +34,8 @@ function Book1() {
         <Col xs={12} md={8}>
         <Typewriter
         onInit={(typewriter) => {
-            typewriter.typeString('<h1>THE FAR SIDE OF SILENCE</h1>')
+            typewriter.typeString('<span class="title">THE FAR SIDE OF SILENCE</span>')
+    
             .callFunction(() => {
                 console.log('String typed out!');
             })
