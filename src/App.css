@@ -36,6 +36,7 @@ html, body {
 
 .margin {
   margin: 30px;
+  padding: 20px;
   background-image: url('./images/paperbackground3.jpg');
   font-family: 'Anonymous Pro', monospace;  
 }
@@ -49,17 +50,25 @@ html, body {
 .resizeBtns {
   width: 200px;
   height: auto;
+  margin: 2%;
+  margin-top: 20px;
 }
 
 .resizeBtns:hover {
   cursor: pointer;
 }
 
-.carousel {
-  height: 300px;
-}
-
 .carousel.caption {
   height: 300px;
   color: black;
+}
+
+.star {
+  height: 30px;
+  margin: 2px
+}
+
+.redline {
+  height: 3px;
+  background-color: red;
 }
