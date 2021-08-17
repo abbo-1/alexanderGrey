@@ -26,10 +26,6 @@ html, body {
   font-family: 'Anonymous Pro', monospace;  
 }
 
-#title {
-  font-size: x-large;
-}
-
 .text {
   font: 900 18px Ruda;
   color: #C08;
@@ -40,7 +36,8 @@ html, body {
 
 .margin {
   margin: 30px;
-  background-image: url('./images/paperbackground.jpg');
+  background-image: url('./images/paperbackground3.jpg');
+  font-family: 'Anonymous Pro', monospace;  
 }
 
 .cover {
@@ -54,3 +51,15 @@ html, body {
   height: auto;
 }
 
+.resizeBtns:hover {
+  cursor: pointer;
+}
+
+.carousel {
+  height: 300px;
+}
+
+.carousel.caption {
+  height: 300px;
+  color: black;
+}

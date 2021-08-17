@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Typewriter from 'typewriter-effect';
 
 import cover from '../images/cover1.png'
 import amazon from '../images/amazonBtn.png'
 import barnes from '../images/barnesBtn.png'
+import card from '../images/card.png'
 
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -26,7 +28,18 @@ function Book1() {
         <img src={cover} class="cover" alt="Far Side of Silence Cover" />
         </Col>
         <Col xs={12} md={8}>
-        <h1>THE FAR SIDE OF SILENCE</h1>
+        <Typewriter
+        onInit={(typewriter) => {
+            typewriter.typeString('<h1>THE FAR SIDE OF SILENCE</h1>')
+    
+            .callFunction(() => {
+                console.log('String typed out!');
+            })
+            .pauseFor(2500)
+            .start();
+            }}
+    />
+        {/* <h1>THE FAR SIDE OF SILENCE</h1> */}
         <p>
         When Air Force One is shot down over the Mediterranean Sea with no survivors ex-Navy Seal Alexander Gray is tasked with an impossible assignment.
         </p>
@@ -41,11 +54,11 @@ function Book1() {
         </p>
         <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
-            {/* <img
+            <img
             className="d-block w-100"
-            src={cover}
+            src={card}
             alt="First slide"
-            /> */}
+            />
                 <Carousel.Caption>
                     <h3 class='text'>First slide label</h3>
                     <p>number 1</p>
@@ -53,6 +66,11 @@ function Book1() {
             </Carousel.Item>
 
             <Carousel.Item>
+            <img
+      className="d-block w-100"
+      src={card}
+      alt="First slide"
+    />
                 <Carousel.Caption>
                     <h3>First slide label</h3>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -60,6 +78,11 @@ function Book1() {
             </Carousel.Item>
 
             <Carousel.Item>
+            <img
+      className="d-block w-100"
+      src={card}
+      alt="First slide"
+    />
                 <Carousel.Caption>
                     <h3>First slide label</h3>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -67,8 +90,12 @@ function Book1() {
             </Carousel.Item>
 
             </Carousel>
+            <a target="_blank" href="https://www.amazon.com/Far-Side-Silence-Robert-Marcus/dp/0988954257/">
             <img src={amazon} class="resizeBtns" alt='Barnes and Noble Button' />
+            </a>
+            <a target="_blank" href="https://www.barnesandnoble.com/w/the-far-side-of-silence-robert-b-marcus/1116050368" >
             <img src={barnes} class="resizeBtns" alt='Barnes and Noble Button' />
+            </a>
             </Col>
             </Row>
 </Container>
