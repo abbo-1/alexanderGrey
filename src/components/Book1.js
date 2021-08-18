@@ -22,11 +22,6 @@ import Container from 'react-bootstrap/Container'
 
 function Book1() {
 
-    const [index, setIndex] = useState(0);
-
-    const handleSelect = (selectedIndex, e) => {
-      setIndex(selectedIndex);
-    };
 
     return (
         <div class="margin">
@@ -63,72 +58,29 @@ function Book1() {
         <p>
         Will Gray survive to bring the traitors to justice and execute the daring operation?
         </p>
+
         <Carousel plugins={['arrows']}>
         <img class="card" src={card1} />
         <img class="card" src={card2} />
         <img class="card" src={card3} />
         <img class="card" src={card4} />
         </Carousel>
-        {/* <Carousel class="carousel" indicators={false} activeIndex={index} onSelect={handleSelect}>
-            <Carousel.Item>
-            <img
-            className= "d-block w-100"
-            src={card}
-            alt="First slide"
-            />
-                <Carousel.Caption>
-                    <img class="star" src={star} /><img class="star" src={star} /><img class="star" src={star} /><img  class="star" src={star} /><img class="star" src={star} />
-                    <div class="review">"Truly suspenseful! This book was not what I was expecting....it was more."</div>
-                    <p>~Goodreads Review</p>
-                </Carousel.Caption>
-            </Carousel.Item>
+        </Col>
+            </Row>
+            <div class="break"/>
+            <div class="redline" />
 
-            <Carousel.Item>
-            <img
-            className="d-block w-100"
-            src={card}
-            alt="First slide"
-            />
-                <Carousel.Caption>
-                <div>
-                <img class="star" src={star} /><img class="star" src={star} /><img class="star" src={star} /><img  class="star" src={star} /><img class="star" src={star} />
-                    <div class="review">"The authors clearly used their knowledge of both the military and medicine to write an suspenseful, action packed novel with unexpected plot twists."</div>
-                    <p>~Amazon Review</p>
-                </div>
-                </Carousel.Caption>
-            </Carousel.Item>
 
-            <Carousel.Item>
-            <img
-            className="d-block w-100"
-            src={card}
-            alt="First slide"
-            />
-                <Carousel.Caption>
-                <img class="star" src={star} /><img class="star" src={star} /><img class="star" src={star} /><img  class="star" src={star} /><img class="star" src={star} />
-                    <div class="review">"This book has more good twists than a cherry licorice stick."</div>
-                    <p>~Amazon Review</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-
-            <Carousel.Item>
-            <img
-            className="d-block w-100"
-            src={card}
-            alt="First slide"
-            />
-                <Carousel.Caption>
-                <img class="star" src={star} /><img class="star" src={star} /><img class="star" src={star} /><img  class="star" src={star} /><img class="star" src={star} />
-                    <div class="review">"This story is one of suspense and mystery, I could not stop reading."</div>
-                    <p>~Goodreads Review</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-
-            </Carousel> */}
+            <Row>
+        <Col xs={12} md={6}>
             <div class="buyBtns">
             <a target="_blank" href="https://www.amazon.com/Far-Side-Silence-Robert-Marcus/dp/0988954257/">
             <img src={amazon} class="resizeBtns" alt='Barnes and Noble Button' />
             </a>
+            </div>
+        </Col>
+        <Col xs={12} md={6}>
+        <div class="buyBtns">
             <a target="_blank" href="https://www.barnesandnoble.com/w/the-far-side-of-silence-robert-b-marcus/1116050368" >
             <img src={barnes} class="resizeBtns" alt='Barnes and Noble Button' />
             </a>
