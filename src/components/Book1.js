@@ -57,10 +57,10 @@ function Book1() {
         <p>
         Will Gray survive to bring the traitors to justice and execute the daring operation?
         </p>
-        <Carousel indicators={false} activeIndex={index} onSelect={handleSelect}>
+        <Carousel class="carousel" indicators={false} activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
             <img
-            className="d-block w-100"
+            className= "d-block w-100"
             src={card}
             alt="First slide"
             />
