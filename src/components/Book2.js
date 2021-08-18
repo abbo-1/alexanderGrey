@@ -5,20 +5,19 @@ import Typewriter from 'typewriter-effect';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
-import cover from '../images/cover1.png'
+import cover from '../images/cover2.png'
 import amazon from '../images/amazonBtn.png'
 import barnes from '../images/barnesBtn.png'
-import card1 from '../images/card1.png'
+import card5 from '../images/card5.png'
 import card2 from '../images/card2.png'
-import card3 from '../images/card3.png'
-import card4 from '../images/card4.png'
+
 
 
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 
-function Book1() {
+function Book2() {
 
 
     return (
@@ -33,7 +32,7 @@ function Book1() {
         <Col xs={12} md={8}>
         <Typewriter
         onInit={(typewriter) => {
-            typewriter.typeString('<span class="title">THE FAR SIDE OF SILENCE</span>')
+            typewriter.typeString('<span class="title">YESTERDAYS TEARS</span>')
     
             .callFunction(() => {
                 console.log('String typed out!');
@@ -43,25 +42,19 @@ function Book1() {
             }}
     />
         <div class="redline" />
-        {/* <h1>THE FAR SIDE OF SILENCE</h1> */}
         <p>
-        When Air Force One is shot down over the Mediterranean Sea with no survivors ex-Navy Seal Alexander Gray is tasked with an impossible assignment.
+        Alexander Gray returns from Sigonella with a heavy heart. While in Sicily, he lost the love of his life and came close to losing his own. But there's no time to relax as Gray discovers that those who sought to destroy the U.S. in Sicily are now at work on American soil- with even more sinister plans.
         </p>
         <p>
-        The new president secretly orders the U.S. Navy to prepare the Sigonella Naval Air Station on Sicily for a clandestine and experimental operation to save the life of the Russian president, the man most Americans believe responsible for the downing of Air Force One.
+        While investigating the diabolical plot, he finds himself up against a scheme over 2000 years in the making and discovers all is not what it seems. With the help of his friends and fellow agents, he sets out to stop the enemy and uncover the truth that will change his life forever.
         </p>
         <p>
-        Antagonistic forces within the U.S. and Russian governments are determined to prevent that operation from taking place. From the U.S. to Sigonella, Gray must evade and outwit those working against the president.
-        </p>
-        <p>
-        Will Gray survive to bring the traitors to justice and execute the daring operation?
+        Who is The Shepard? Who are the Cotorie and what do they want? Is Allison really dead?
         </p>
 
         <Carousel plugins={['arrows']}>
-        <img class="card" src={card1} />
-        <img class="card" src={card2} />
-        <img class="card" src={card3} />
-        <img class="card" src={card4} />
+        <img class="card" src={card5} />
+        {/* <img class="card" src={card2} /> */}
         </Carousel>
         </Col>
             </Row>
@@ -72,14 +65,14 @@ function Book1() {
             <Row>
         <Col xs={12} md={6}>
             <div class="buyBtns">
-            <a target="_blank" href="https://www.amazon.com/Far-Side-Silence-Robert-Marcus/dp/0988954257/">
+            <a target="_blank" href="https://www.amazon.com/Yesterdays-Tears-Robert-B-Marcus/dp/1635358418/">
             <img src={amazon} class="resizeBtns" alt='Barnes and Noble Button' />
             </a>
             </div>
         </Col>
         <Col xs={12} md={6}>
         <div class="buyBtns">
-            <a target="_blank" href="https://www.barnesandnoble.com/w/the-far-side-of-silence-robert-b-marcus/1116050368" >
+            <a target="_blank" href="https://www.barnesandnoble.com/w/yesterdays-tears-robert-b-marcus/1126065391" >
             <img src={barnes} class="resizeBtns" alt='Barnes and Noble Button' />
             </a>
             </div>
@@ -92,4 +85,4 @@ function Book1() {
     )
 }
 
-export default Book1
+export default Book2
