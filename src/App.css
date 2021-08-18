@@ -74,6 +74,14 @@ html, body {
   padding: 1%;
 }
 
+.resizeBtnsDisab {
+  width: 200px;
+  height: auto;
+  margin: 1%;
+  margin-top: 10px;
+  padding: 1%;
+}
+
 .resizeBtns:hover {
   cursor: pointer;
 }

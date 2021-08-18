@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect';
 
 import FirstBook from './components/Book1.js'
 import SecondBook from './components/Book2.js'
+import ThirdBook from './components/Book3.js'
 import Title from './components/Title';
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
   {/* <Title /> */}
   <FirstBook />
   <SecondBook />
+  <ThirdBook />
   </div>
-  
+
   );
 }
 
