@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel'
+// import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Typewriter from 'typewriter-effect';
+
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
 
 import cover from '../images/cover1.png'
 import amazon from '../images/amazonBtn.png'
 import barnes from '../images/barnesBtn.png'
-import card from '../images/card.png'
+import card1 from '../images/card1.png'
+import card2 from '../images/card2.png'
+import card3 from '../images/card3.png'
+import card4 from '../images/card4.png'
 import star from '../images/star.png'
 
 
@@ -57,7 +63,13 @@ function Book1() {
         <p>
         Will Gray survive to bring the traitors to justice and execute the daring operation?
         </p>
-        <Carousel class="carousel" indicators={false} activeIndex={index} onSelect={handleSelect}>
+        <Carousel plugins={['arrows']}>
+        <img class="card" src={card1} />
+        <img class="card" src={card2} />
+        <img class="card" src={card3} />
+        <img class="card" src={card4} />
+        </Carousel>
+        {/* <Carousel class="carousel" indicators={false} activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
             <img
             className= "d-block w-100"
@@ -66,7 +78,7 @@ function Book1() {
             />
                 <Carousel.Caption>
                     <img class="star" src={star} /><img class="star" src={star} /><img class="star" src={star} /><img  class="star" src={star} /><img class="star" src={star} />
-                    <h3>"Truly suspenseful! This book was not what I was expecting....it was more."</h3>
+                    <div class="review">"Truly suspenseful! This book was not what I was expecting....it was more."</div>
                     <p>~Goodreads Review</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -78,8 +90,23 @@ function Book1() {
             alt="First slide"
             />
                 <Carousel.Caption>
+                <div>
                 <img class="star" src={star} /><img class="star" src={star} /><img class="star" src={star} /><img  class="star" src={star} /><img class="star" src={star} />
-                    <h5>"The authors clearly used their knowledge of both the military and medicine to write an suspenseful, action packed novel with unexpected plot twists."</h5>
+                    <div class="review">"The authors clearly used their knowledge of both the military and medicine to write an suspenseful, action packed novel with unexpected plot twists."</div>
+                    <p>~Amazon Review</p>
+                </div>
+                </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+            <img
+            className="d-block w-100"
+            src={card}
+            alt="First slide"
+            />
+                <Carousel.Caption>
+                <img class="star" src={star} /><img class="star" src={star} /><img class="star" src={star} /><img  class="star" src={star} /><img class="star" src={star} />
+                    <div class="review">"This book has more good twists than a cherry licorice stick."</div>
                     <p>~Amazon Review</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -92,31 +119,20 @@ function Book1() {
             />
                 <Carousel.Caption>
                 <img class="star" src={star} /><img class="star" src={star} /><img class="star" src={star} /><img  class="star" src={star} /><img class="star" src={star} />
-                    <h3>"This book has more good twists than a cherry licorice stick."</h3>
-                    <p>~Amazon Review</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-
-            <Carousel.Item>
-            <img
-            className="d-block w-100"
-            src={card}
-            alt="First slide"
-            />
-                <Carousel.Caption>
-                <img class="star" src={star} /><img class="star" src={star} /><img class="star" src={star} /><img  class="star" src={star} /><img class="star" src={star} />
-                    <h3>"This story is one of suspense and mystery, I could not stop reading."</h3>
+                    <div class="review">"This story is one of suspense and mystery, I could not stop reading."</div>
                     <p>~Goodreads Review</p>
                 </Carousel.Caption>
             </Carousel.Item>
 
-            </Carousel>
+            </Carousel> */}
+            <div class="buyBtns">
             <a target="_blank" href="https://www.amazon.com/Far-Side-Silence-Robert-Marcus/dp/0988954257/">
             <img src={amazon} class="resizeBtns" alt='Barnes and Noble Button' />
             </a>
             <a target="_blank" href="https://www.barnesandnoble.com/w/the-far-side-of-silence-robert-b-marcus/1116050368" >
             <img src={barnes} class="resizeBtns" alt='Barnes and Noble Button' />
             </a>
+            </div>
             </Col>
             </Row>
 </Container>

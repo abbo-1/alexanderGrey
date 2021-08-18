@@ -36,34 +36,14 @@ html, body {
   border-style: inset;
   border-radius: 30px;
   background-color: white;
-  width: 25vw;
-  margin: 10px;
+  /* width: 25vw; */
+  width: 90%;
+  margin: 15px;
   padding: 10px;
   display:flex; 
   align-items: center;
 }
 
-.resizeBtns {
-  width: 200px;
-  height: auto;
-  margin: 2%;
-  margin-top: 20px;
-}
-
-.resizeBtns:hover {
-  cursor: pointer;
-}
-
-.carousel.caption {
-  height: 300px;
-  color: black;
-  flex-shrink: 1;
-}
-
-.star {
-  height: 30px;
-  margin: 2px
-}
 
 .redline {
   height: 3px;
@@ -74,11 +54,32 @@ html, body {
   font-size: xx-large;
 }
 
-.card {
-  border-radius: 30px;
+.review {
+  margin: auto;
+  width: 90%;
+  padding: 5px;
 }
 
-.carousel {
-  justify-content: center;
+.card {
+    width: 100%;
+    height: auto;
+}
+
+
+.buyBtns {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resizeBtns {
+  width: 200px;
+  height: auto;
+  margin: 2%;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.resizeBtns:hover {
+  cursor: pointer;
 }
