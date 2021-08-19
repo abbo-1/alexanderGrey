@@ -32,6 +32,18 @@ html, body {
   font-family: 'Anonymous Pro', monospace;  
   font-weight: bold;
   border-radius: 30px;
+  border: 2px solid red
+}
+
+.marginTitle {
+  margin: 25px;
+  padding: 20px;
+  background-image: url('./images/paperbackground3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Anonymous Pro', monospace;  
+  border-radius: 30px;
+  border: 2px solid red
 }
 
 .cover {
