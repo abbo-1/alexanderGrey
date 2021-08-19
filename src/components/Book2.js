@@ -8,7 +8,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import cover from '../images/cover2.png'
 import amazon from '../images/amazonBtn.png'
 import barnes from '../images/barnesBtn.png'
-// import card5 from '../images/card5.png'
+import card5 from '../images/book2card1.png'
 // import card2 from '../images/card2.png'
 
 // import bk2c1 from '../images/book2card1.png'
@@ -54,10 +54,10 @@ function Book2() {
         Who is The Shepard? Who are the Cotorie and what do they want? Is Allison really dead?
         </p>
 
-        {/* <Carousel plugins={['arrows']}>
-        <img class="card" src={bk2c1} />
+        {/* <Carousel plugins={['arrows']}> */}
+        <img class="card" src={card5} />
         {/* <img class="card" src={card2} /> */}
-        {/*</Col></Carousel> */}
+        {/* </Carousel> */}
 
 
         </Col>
