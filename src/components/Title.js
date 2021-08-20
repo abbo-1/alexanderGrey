@@ -90,13 +90,13 @@ function Title() {
                   </Modal.Header>
                   <Modal.Body>
                     <p>
-                    I was born on May 26, 1972 in the pleasant little college town of Gainesville, Florida. I was the first of two children- my sister Carol being born three years later. Our childhood was a happy one. My parents ran and owned an antique store in Micanopy, Florida. Carol and I spent hours playing at the store, eventually moving on to helping run it.
+                    I grew up in the pleasant little college town of Gainesville, Florida. I was the first of two children- my sister Carol being born three years later. Our childhood was a happy one. My parents ran and owned an antique store in Micanopy, Florida. Carol and I spent hours playing at the store, eventually moving on to helping run it.
                     </p>
                     <p>
                     I went to Micanopy High School where I played baseball and was known for a blazing fast ball. By the time I was a senior I had the school record in strike outs and ERA. I was offered a scholarship at the University of Florida. During our last game for the state championship, I had a three and two count on the cleanup hitter in the last inning. I bore down on the pitch and felt a sharp pain. My future in baseball was over.
                     </p>
                     <p>
-                    I attended the University of Florida and graduated in 1994. It was there that I met and fell in love with Allison Bishop. She was beautiful and sweet and everything you could ever want in a woman.
+                    I attended and graduated from the University of Florida. It was there that I met and fell in love with Allison Bishop. She was beautiful and sweet and everything you could ever want in a woman.
                     </p>
                     <p>
                     I thought I had life all planned out, i'd go to medical school, marry Allison, and live happily ever after. Neat and easy.
