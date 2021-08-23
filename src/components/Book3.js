@@ -40,7 +40,16 @@ function Book3() {
     />
         <div class="redline" />
         <p>
-        Stay tuned for more information on the thrilling conclusion to 'The Far Side of Silence' trilogy!
+        After three years in hiding, Alexander Gray is back the United States. Though the oil crisis is easing, Thomas Springer is still president and he issues a warrant for Gray's arrest.
+        </p>
+        <p>
+        To make matters worse, The Shepard and his Coterie are also trying to hunt him down- willing to use any means neccessary to prevent him finding the book 'On Kingship' written over 2000 years ago.
+        </p>
+        <p>
+        But Gray isn't alone- he and his friends are determined to find it first and end the reign of the Coterie. From the United States, to Ireland, then Crete, and finally Nova Scotia, Gray and the Coterie will chase each other in a thrilling life and death game of cat and mouse in which only one will survive.
+        </p>
+        <p>
+        Will President Springer and the Coterie prevail? Or will Gray? Find out later this year when 'Tomorrow's Destiny' hits online retailers!
         </p>
 
         {/* <Carousel plugins={['arrows']}>
