@@ -33,12 +33,11 @@ function Book1() {
         <Col xs={12} md={8}>
         <Typewriter
         onInit={(typewriter) => {
-            typewriter.typeString('<span class="title">THE FAR SIDE OF SILENCE</span>')
+            typewriter.pasteString('<span class="title">THE FAR SIDE OF SILENCE</span>')
     
             .callFunction(() => {
                 console.log('String typed out!');
             })
-            .pauseFor(2500)
             .start();
             }}
     />
